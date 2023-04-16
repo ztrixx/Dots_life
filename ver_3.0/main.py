@@ -44,7 +44,7 @@ class Main:
         self.draw_all(display)
 
     def create_food(self):
-        return [Food(5, GREEN, self.start_board.height, choice([True, False])) for _ in range(self.food_count)]
+        return [Food(5, GREEN, self.start_board.height, randint(0,10)) for _ in range(self.food_count)]
 
 
     def create_dots(self):

@@ -240,7 +240,7 @@ class Food:
             x = randint(20, SCREEN_SIZE[0] - 20)
         if y is None:
             y = randint(self.gap + 20, SCREEN_SIZE[1] - 20)
-        if self.poison == True:
+        if self.poison <= 4:
             self.color = RED
             self.size = 7
         self.rect.center = (x, y)
